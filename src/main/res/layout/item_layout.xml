@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="8dp">
+    <ImageView
+        android:id="@+id/news_img"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/new0"
+        android:scaleType="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        />
+    <TextView
+        android:id="@+id/news_brief"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/intro1"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:padding="8dp"
+        android:layout_toEndOf="@id/news_img"
+        android:layout_alignParentTop="true"/>
+    <TextView
+        android:id="@+id/author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/author0"
+        android:textSize="12sp"
+        android:paddingHorizontal="8dp"
+        android:layout_below="@id/news_brief"
+        android:layout_alignParentEnd="true"
+        android:textColor="@color/dark_grey"
+
+        app:drawableRightCompat="@drawable/ic_baseline_brush_24"
+        />
+    <TextView
+        android:id="@+id/date_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/date_time1"
+        android:textSize="12sp"
+        android:padding="8dp"
+        android:textColor="@color/dark_grey"
+        app:drawableRightCompat="@drawable/ic_baseline_access_time_24"
+        android:layout_alignParentEnd="true"
+
+        android:layout_below="@id/author"/>
+</RelativeLayout>
